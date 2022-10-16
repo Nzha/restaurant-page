@@ -42,14 +42,23 @@ header {
     grid-area: header;
     display: flex;
     justify-content: space-around;
+    position: sticky;
 }
 
 #logo {
     margin: 1rem 0;
 }
 
+a#logo {
+    text-decoration: none;
+}
+
 h1 {
     margin: 0;
+}
+
+nav {
+    display: flex;
 }
 
 ul.menu {
@@ -76,4 +85,8 @@ ul.menu {
 
 footer {
     grid-area: footer;
+}
+
+@media only screen and (min-width: 700px) {
+
 }
