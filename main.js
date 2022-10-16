@@ -16,12 +16,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./bg.jpg */ "./src/bg.jpg"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    text-decoration: underline;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n}\n\n#brand {\n    margin: 1rem 0;\n}\n\nh1 {\n    margin: 0;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    align-items: center;\n    gap: 3rem;\n    font-size: 1.25rem;\n    font-weight: 600;\n}\n\n#main {\n    grid-area: main;\n}\n\nfooter {\n    grid-area: footer;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;GAEG;;AAEH;IACI,sBAAsB;AAC1B;AACA;IACI,mBAAmB;AACvB;;AAEA;IACI,iCAAiC;IACjC,cAAc;IACd,yBAAyB;IACzB,aAAa;IACb,aAAa;IACb,iCAAiC;IACjC;;;gBAGY;IACZ,SAAS;AACb;;AAEA;IACI,cAAc;IACd,qBAAqB;AACzB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;;IAEI,cAAc;IACd,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,aAAa;IACb,6BAA6B;AACjC;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,SAAS;AACb;;AAEA;IACI,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,SAAS;IACT,kBAAkB;IAClB,gBAAgB;AACpB;;AAEA;IACI,eAAe;AACnB;;AAEA;IACI,iBAAiB;AACrB","sourcesContent":["/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    text-decoration: underline;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n}\n\n#brand {\n    margin: 1rem 0;\n}\n\nh1 {\n    margin: 0;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    align-items: center;\n    gap: 3rem;\n    font-size: 1.25rem;\n    font-weight: 600;\n}\n\n#main {\n    grid-area: main;\n}\n\nfooter {\n    grid-area: footer;\n}"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    text-decoration: underline;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n}\n\n#logo {\n    margin: 1rem 0;\n}\n\nh1 {\n    margin: 0;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    align-items: center;\n    gap: 3rem;\n    font-size: 1.25rem;\n    font-weight: 600;\n}\n\n#main {\n    grid-area: main;\n    display: flex;\n}\n\n#overlay {\n    flex: 1;\n    background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: 0% 75%;\n    background-size: cover;\n    background-repeat: no-repeat;\n}\n\nfooter {\n    grid-area: footer;\n}", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;GAEG;;AAEH;IACI,sBAAsB;AAC1B;AACA;IACI,mBAAmB;AACvB;;AAEA;IACI,iCAAiC;IACjC,cAAc;IACd,yBAAyB;IACzB,aAAa;IACb,aAAa;IACb,iCAAiC;IACjC;;;gBAGY;IACZ,SAAS;AACb;;AAEA;IACI,cAAc;IACd,qBAAqB;AACzB;;AAEA;IACI,0BAA0B;AAC9B;;AAEA;;IAEI,cAAc;IACd,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,aAAa;IACb,6BAA6B;AACjC;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,SAAS;AACb;;AAEA;IACI,gBAAgB;IAChB,aAAa;IACb,mBAAmB;IACnB,SAAS;IACT,kBAAkB;IAClB,gBAAgB;AACpB;;AAEA;IACI,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,OAAO;IACP,yDAAiC;IACjC,2BAA2B;IAC3B,sBAAsB;IACtB,4BAA4B;AAChC;;AAEA;IACI,iBAAiB;AACrB","sourcesContent":["/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    text-decoration: underline;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n}\n\n#logo {\n    margin: 1rem 0;\n}\n\nh1 {\n    margin: 0;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    align-items: center;\n    gap: 3rem;\n    font-size: 1.25rem;\n    font-weight: 600;\n}\n\n#main {\n    grid-area: main;\n    display: flex;\n}\n\n#overlay {\n    flex: 1;\n    background-image: url('./bg.jpg');\n    background-position: 0% 75%;\n    background-size: cover;\n    background-repeat: no-repeat;\n}\n\nfooter {\n    grid-area: footer;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -135,6 +140,44 @@ module.exports = function (cssWithMappingToString) {
   };
 
   return list;
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  }
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -528,6 +571,16 @@ function styleTagTransform(css, styleElement) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/bg.jpg":
+/*!********************!*\
+  !*** ./src/bg.jpg ***!
+  \********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "496eb3fe4d69e349dbe8.jpg";
+
 /***/ })
 
 /******/ 	});
@@ -556,6 +609,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -581,6 +637,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -597,6 +665,52 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/nonce */
 /******/ 	(() => {
 /******/ 		__webpack_require__.nc = undefined;
@@ -611,7 +725,22 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
+/* harmony import */ var _bg_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bg.jpg */ "./src/bg.jpg");
 
+
+
+function component() {
+    const element = document.createElement('div');
+
+    const myBackground = new Image();
+    myBackground.src = _bg_jpg__WEBPACK_IMPORTED_MODULE_1__;
+    element.appendChild(myBackground);
+
+    return element;
+}
+
+
+// document.body.appendChild(component());
 
 console.log('Working!');
 })();
