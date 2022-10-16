@@ -83,7 +83,6 @@ nav#menu {
     background-color: #403f3c;
     position: absolute;
     top: 3.78rem;
-
 }
 
 ul.menu {
@@ -107,7 +106,7 @@ ul.menu {
 #overlay {
     flex: 1;
     background-image: url('./bg.jpg');
-    background-position: 0% 75%;
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -137,5 +136,9 @@ footer {
         gap: 3rem;
         width: auto;
         margin: 0;
+    }
+
+    #overlay {
+        background-position: 0% 75%;
     }
 }
