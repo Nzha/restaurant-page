@@ -90,7 +90,7 @@ ul.menu {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
     width: 100vw;
     font-size: 1.25rem;
     font-weight: 600;
@@ -98,17 +98,36 @@ ul.menu {
     padding: 0;
 }
 
-#main {
+.main {
     grid-area: main;
     display: flex;
 }
 
-#overlay {
+.bg-img {
     flex: 1;
-    background-image: url('./bg.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-text {
+    color: white;
+    width: 70%;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-text > h1 {
+    font-size: 3.5rem;
 }
 
 footer {
@@ -138,7 +157,15 @@ footer {
         margin: 0;
     }
 
-    #overlay {
+    .bg-img {
         background-position: 0% 75%;
+    }
+
+    .bg-text {
+        font-size: 1.5rem;
+    }
+
+    .bg-text > h1 {
+        font-size: 4rem;
     }
 }
