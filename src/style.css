@@ -44,7 +44,7 @@ header {
     justify-content: space-around;
 }
 
-#brand {
+#logo {
     margin: 1rem 0;
 }
 
@@ -63,6 +63,15 @@ ul.menu {
 
 #main {
     grid-area: main;
+    display: flex;
+}
+
+#overlay {
+    flex: 1;
+    background-image: url('./bg.jpg');
+    background-position: 0% 75%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 footer {
