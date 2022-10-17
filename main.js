@@ -573,6 +573,38 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/createEl.js":
+/*!*************************!*\
+  !*** ./src/createEl.js ***!
+  \*************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ element)
+/* harmony export */ });
+function element(tag, className, id, inputType) {
+    const el = document.createElement(`${tag}`);
+
+    if (typeof className !== 'undefined') {
+        el.classList.add(`${className}`);
+    }
+
+    if (typeof id !== 'undefined') {
+        el.id = id;
+    }
+
+    if (typeof inputType !== 'undefined') {
+        el.type = `${inputType}`;
+    }
+
+    return el;
+}
+
+// document.body.appendChild(element('header'));
+
+/***/ }),
+
 /***/ "./src/bg.jpg":
 /*!********************!*\
   !*** ./src/bg.jpg ***!
@@ -725,24 +757,26 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _bg_jpg__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./bg.jpg */ "./src/bg.jpg");
+/* harmony import */ var _createEl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createEl.js */ "./src/createEl.js");
 
+ // param: tag, className, id, inputType
 
+document.body.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('header'));
+const header = document.querySelector('header');
 
-function component() {
-    const element = document.createElement('div');
+header.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('a', 'logo', 'logo'));
+const logo = document.querySelector('.logo');
 
-    const myBackground = new Image();
-    myBackground.src = _bg_jpg__WEBPACK_IMPORTED_MODULE_1__;
-    element.appendChild(myBackground);
+logo.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('h1'));
+const logoLine1 = document.querySelector('.logo > h1:first-child')
+logoLine1.textContent = 'THE HAPPY';
 
-    return element;
-}
+logo.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('h1'));
+const logoLine2 = document.querySelector('.logo > h1:nth-child(2)')
+logoLine2.textContent = 'LITTLE PIGLET';
 
+header.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('input', 'checkbox_toggle', 'checkbox_toggle', 'checkbox'));
 
-// document.body.appendChild(component());
-
-console.log('Working!');
 })();
 
 /******/ })()
