@@ -1,17 +1,18 @@
 import './style.css';
-import Background from './bg.jpg';
+import createEl from './createEl.js'; // param: tag, className, id, inputType
 
-function component() {
-    const element = document.createElement('div');
+document.body.appendChild(createEl('header'));
+const header = document.querySelector('header');
 
-    const myBackground = new Image();
-    myBackground.src = Background;
-    element.appendChild(myBackground);
+header.appendChild(createEl('a', 'logo', 'logo'));
+const logo = document.querySelector('.logo');
 
-    return element;
-}
+logo.appendChild(createEl('h1'));
+const logoLine1 = document.querySelector('.logo > h1:first-child')
+logoLine1.textContent = 'THE HAPPY';
 
+logo.appendChild(createEl('h1'));
+const logoLine2 = document.querySelector('.logo > h1:nth-child(2)')
+logoLine2.textContent = 'LITTLE PIGLET';
 
-// document.body.appendChild(component());
-
-console.log('Working!');
+header.appendChild(createEl('input', 'checkbox_toggle', 'checkbox_toggle', 'checkbox'));
