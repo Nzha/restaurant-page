@@ -3,28 +3,25 @@ import './style.css';
 const header = document.createElement('header');
 document.body.appendChild(header);
 
-function createLogo(firstLine, secondLine) {
+function createLogo(...lines) {
     const logo = document.createElement('a');
     logo.classList.add('logo');
     logo.href = '#';
     header.appendChild(logo);
 
-    const logoLine1 = document.createElement('h1');
-    logoLine1.textContent = `${firstLine}`;
-    logo.appendChild(logoLine1);
-
-    if (typeof secondLine !== 'undefined') {
-        const logoLine2 = document.createElement('h1');
-        logoLine2.textContent = `${secondLine}`;
-        logo.appendChild(logoLine2);
+    for (const line of lines) {
+        const logoLine = document.createElement('h1');
+        logoLine.textContent = `${line}`;
+        logo.appendChild(logoLine);
     }
 
     return logo;
-};
+}
 
 createLogo('THE HAPPY', 'LITTLE PIGLET');
 
-function menu() {
+function createMenu(...items) {
+    // Add checkbox then replace it by ☰ on small screens to create responsive menu
     const checkbox = document.createElement('input');
     checkbox.type = 'checkbox';
     checkbox.id = 'checkbox_toggle';
@@ -45,26 +42,14 @@ function menu() {
     menuUl.classList.add('menu');
     menuNav.appendChild(menuUl);
 
-    const homeLi = document.createElement('li');
-    menuUl.appendChild(homeLi);
-    const homeA = document.createElement('a');
-    homeA.textContent = 'Home';
-    homeA.href = '#';
-    homeLi.appendChild(homeA);
+    for (const item of items) {
+        const itemLi = document.createElement('li');
+        menuUl.appendChild(itemLi);
+        const itemA = document.createElement('a');
+        itemA.textContent = `${item}`;
+        itemA.href = '#';
+        itemLi.appendChild(itemA);
+    }
+}
 
-    const menuLi = document.createElement('li');
-    menuUl.appendChild(menuLi);
-    const menuA = document.createElement('a');
-    menuA.textContent = 'Menu';
-    menuA.href = '#';
-    menuLi.appendChild(menuA);
-
-    const contactLi = document.createElement('li');
-    menuUl.appendChild(contactLi);
-    const contactA = document.createElement('a');
-    contactA.textContent = 'Contact';
-    contactA.href = '#';
-    contactLi.appendChild(contactA);
-
-    return menu;
-};
+createMenu('Home', 'Menu', 'Contact')
