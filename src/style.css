@@ -45,14 +45,14 @@ header {
     position: sticky;
 }
 
-#logo {
+.logo {
     margin: 1rem 0;
     display: flex;
     gap: 1ch;
     font-size: 0.75rem;
 }
 
-a#logo {
+a.logo {
     color: inherit;
 }
 
@@ -67,7 +67,7 @@ input[type=checkbox] {
 }
 
 /* When hamburger (checkbox) is clicked, display menu */
-input[type=checkbox]:checked ~ nav#menu {
+input[type=checkbox]:checked ~ nav.menu {
     display: block;
 }
 
@@ -78,7 +78,7 @@ input[type=checkbox]:checked ~ nav#menu {
 }
 
 /* Hide menu by default */
-nav#menu {
+nav.menu {
     display: none;
     background-color: #403f3c;
     position: absolute;
@@ -135,7 +135,7 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
-    #logo {
+    .logo {
         display: block;
         font-size: inherit;
     }
@@ -145,7 +145,7 @@ footer {
         user-select: none;
     }
 
-    nav#menu {
+    nav.menu {
         display: flex;
         position: static;
     }

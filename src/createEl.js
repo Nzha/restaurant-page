@@ -15,5 +15,3 @@ export default function element(tag, className, id, inputType) {
 
     return el;
 }
-
-// document.body.appendChild(element('header'));
