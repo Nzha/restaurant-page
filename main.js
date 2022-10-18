@@ -26,7 +26,7 @@ var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_sourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    color: #eab06b;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n    position: sticky;\n}\n\n#logo {\n    margin: 1rem 0;\n    display: flex;\n    gap: 1ch;\n    font-size: 0.75rem;\n}\n\na#logo {\n    color: inherit;\n}\n\nh1 {\n    margin: 0;\n}\n\n/* Hide default checkbox */\ninput[type=checkbox] {\n    display: none;\n    user-select: none;\n}\n\n/* When hamburger (checkbox) is clicked, display menu */\ninput[type=checkbox]:checked ~ nav#menu {\n    display: block;\n}\n\n.hamburger {\n    display: flex;\n    align-items: center;\n    font-size: 1.5rem;\n}\n\n/* Hide menu by default */\nnav#menu {\n    display: none;\n    background-color: #403f3c;\n    position: absolute;\n    top: 3.78rem;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1rem;\n    width: 100vw;\n    font-size: 1.25rem;\n    font-weight: 600;\n    margin-top: 0.5rem;\n    padding: 0;\n}\n\n.main {\n    grid-area: main;\n    display: flex;\n}\n\n.bg-img {\n    flex: 1;\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-size: cover;\n    background-repeat: no-repeat;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text {\n    color: white;\n    width: 70%;\n    font-size: 1.2rem;\n    font-weight: 500;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text > h1 {\n    font-size: 3.5rem;\n}\n\nfooter {\n    grid-area: footer;\n}\n\n@media only screen and (min-width: 700px) {\n    #logo {\n        display: block;\n        font-size: inherit;\n    }\n\n    .hamburger {\n        display: none;\n        user-select: none;\n    }\n\n    nav#menu {\n        display: flex;\n        position: static;\n    }\n\n    ul.menu {\n        flex-direction: row;\n        gap: 3rem;\n        width: auto;\n        margin: 0;\n    }\n\n    .bg-img {\n        background-position: 0% 75%;\n    }\n\n    .bg-text {\n        font-size: 1.5rem;\n    }\n\n    .bg-text > h1 {\n        font-size: 4rem;\n    }\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;GAEG;;AAEH;IACI,sBAAsB;AAC1B;AACA;IACI,mBAAmB;AACvB;;AAEA;IACI,iCAAiC;IACjC,cAAc;IACd,yBAAyB;IACzB,aAAa;IACb,aAAa;IACb,iCAAiC;IACjC;;;gBAGY;IACZ,SAAS;AACb;;AAEA;IACI,cAAc;IACd,qBAAqB;AACzB;;AAEA;IACI,cAAc;AAClB;;AAEA;;IAEI,cAAc;IACd,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,aAAa;IACb,6BAA6B;IAC7B,gBAAgB;AACpB;;AAEA;IACI,cAAc;IACd,aAAa;IACb,QAAQ;IACR,kBAAkB;AACtB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,SAAS;AACb;;AAEA,0BAA0B;AAC1B;IACI,aAAa;IACb,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,yBAAyB;AACzB;IACI,aAAa;IACb,yBAAyB;IACzB,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,SAAS;IACT,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;IAChB,kBAAkB;IAClB,UAAU;AACd;;AAEA;IACI,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,OAAO;IACP,8GAAoF;IACpF,2BAA2B;IAC3B,sBAAsB;IACtB,4BAA4B;IAC5B,aAAa;IACb,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IACZ,UAAU;IACV,iBAAiB;IACjB,gBAAgB;IAChB,kBAAkB;IAClB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI;QACI,cAAc;QACd,kBAAkB;IACtB;;IAEA;QACI,aAAa;QACb,iBAAiB;IACrB;;IAEA;QACI,aAAa;QACb,gBAAgB;IACpB;;IAEA;QACI,mBAAmB;QACnB,SAAS;QACT,WAAW;QACX,SAAS;IACb;;IAEA;QACI,2BAA2B;IAC/B;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,eAAe;IACnB;AACJ","sourcesContent":["/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    color: #eab06b;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n    position: sticky;\n}\n\n#logo {\n    margin: 1rem 0;\n    display: flex;\n    gap: 1ch;\n    font-size: 0.75rem;\n}\n\na#logo {\n    color: inherit;\n}\n\nh1 {\n    margin: 0;\n}\n\n/* Hide default checkbox */\ninput[type=checkbox] {\n    display: none;\n    user-select: none;\n}\n\n/* When hamburger (checkbox) is clicked, display menu */\ninput[type=checkbox]:checked ~ nav#menu {\n    display: block;\n}\n\n.hamburger {\n    display: flex;\n    align-items: center;\n    font-size: 1.5rem;\n}\n\n/* Hide menu by default */\nnav#menu {\n    display: none;\n    background-color: #403f3c;\n    position: absolute;\n    top: 3.78rem;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1rem;\n    width: 100vw;\n    font-size: 1.25rem;\n    font-weight: 600;\n    margin-top: 0.5rem;\n    padding: 0;\n}\n\n.main {\n    grid-area: main;\n    display: flex;\n}\n\n.bg-img {\n    flex: 1;\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');\n    background-position: center;\n    background-size: cover;\n    background-repeat: no-repeat;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text {\n    color: white;\n    width: 70%;\n    font-size: 1.2rem;\n    font-weight: 500;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text > h1 {\n    font-size: 3.5rem;\n}\n\nfooter {\n    grid-area: footer;\n}\n\n@media only screen and (min-width: 700px) {\n    #logo {\n        display: block;\n        font-size: inherit;\n    }\n\n    .hamburger {\n        display: none;\n        user-select: none;\n    }\n\n    nav#menu {\n        display: flex;\n        position: static;\n    }\n\n    ul.menu {\n        flex-direction: row;\n        gap: 3rem;\n        width: auto;\n        margin: 0;\n    }\n\n    .bg-img {\n        background-position: 0% 75%;\n    }\n\n    .bg-text {\n        font-size: 1.5rem;\n    }\n\n    .bg-text > h1 {\n        font-size: 4rem;\n    }\n}\n"],"sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    color: #eab06b;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n    position: sticky;\n}\n\n.logo {\n    margin: 1rem 0;\n    display: flex;\n    gap: 1ch;\n    font-size: 0.75rem;\n}\n\na.logo {\n    color: inherit;\n}\n\nh1 {\n    margin: 0;\n}\n\n/* Hide default checkbox */\ninput[type=checkbox] {\n    display: none;\n    user-select: none;\n}\n\n/* When hamburger (checkbox) is clicked, display menu */\ninput[type=checkbox]:checked ~ nav.menu {\n    display: block;\n}\n\n.hamburger {\n    display: flex;\n    align-items: center;\n    font-size: 1.5rem;\n}\n\n/* Hide menu by default */\nnav.menu {\n    display: none;\n    background-color: #403f3c;\n    position: absolute;\n    top: 3.78rem;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1rem;\n    width: 100vw;\n    font-size: 1.25rem;\n    font-weight: 600;\n    margin-top: 0.5rem;\n    padding: 0;\n}\n\n.main {\n    grid-area: main;\n    display: flex;\n}\n\n.bg-img {\n    flex: 1;\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n    background-position: center;\n    background-size: cover;\n    background-repeat: no-repeat;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text {\n    color: white;\n    width: 70%;\n    font-size: 1.2rem;\n    font-weight: 500;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text > h1 {\n    font-size: 3.5rem;\n}\n\nfooter {\n    grid-area: footer;\n}\n\n@media only screen and (min-width: 700px) {\n    .logo {\n        display: block;\n        font-size: inherit;\n    }\n\n    .hamburger {\n        display: none;\n        user-select: none;\n    }\n\n    nav.menu {\n        display: flex;\n        position: static;\n    }\n\n    ul.menu {\n        flex-direction: row;\n        gap: 3rem;\n        width: auto;\n        margin: 0;\n    }\n\n    .bg-img {\n        background-position: 0% 75%;\n    }\n\n    .bg-text {\n        font-size: 1.5rem;\n    }\n\n    .bg-text > h1 {\n        font-size: 4rem;\n    }\n}\n", "",{"version":3,"sources":["webpack://./src/style.css"],"names":[],"mappings":"AAAA;;GAEG;;AAEH;IACI,sBAAsB;AAC1B;AACA;IACI,mBAAmB;AACvB;;AAEA;IACI,iCAAiC;IACjC,cAAc;IACd,yBAAyB;IACzB,aAAa;IACb,aAAa;IACb,iCAAiC;IACjC;;;gBAGY;IACZ,SAAS;AACb;;AAEA;IACI,cAAc;IACd,qBAAqB;AACzB;;AAEA;IACI,cAAc;AAClB;;AAEA;;IAEI,cAAc;IACd,yBAAyB;AAC7B;;AAEA;IACI,iBAAiB;IACjB,aAAa;IACb,6BAA6B;IAC7B,gBAAgB;AACpB;;AAEA;IACI,cAAc;IACd,aAAa;IACb,QAAQ;IACR,kBAAkB;AACtB;;AAEA;IACI,cAAc;AAClB;;AAEA;IACI,SAAS;AACb;;AAEA,0BAA0B;AAC1B;IACI,aAAa;IACb,iBAAiB;AACrB;;AAEA,uDAAuD;AACvD;IACI,cAAc;AAClB;;AAEA;IACI,aAAa;IACb,mBAAmB;IACnB,iBAAiB;AACrB;;AAEA,yBAAyB;AACzB;IACI,aAAa;IACb,yBAAyB;IACzB,kBAAkB;IAClB,YAAY;AAChB;;AAEA;IACI,gBAAgB;IAChB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,SAAS;IACT,YAAY;IACZ,kBAAkB;IAClB,gBAAgB;IAChB,kBAAkB;IAClB,UAAU;AACd;;AAEA;IACI,eAAe;IACf,aAAa;AACjB;;AAEA;IACI,OAAO;IACP,8GAAoF;IACpF,2BAA2B;IAC3B,sBAAsB;IACtB,4BAA4B;IAC5B,aAAa;IACb,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,YAAY;IACZ,UAAU;IACV,iBAAiB;IACjB,gBAAgB;IAChB,kBAAkB;IAClB,aAAa;IACb,sBAAsB;IACtB,mBAAmB;IACnB,uBAAuB;AAC3B;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI,iBAAiB;AACrB;;AAEA;IACI;QACI,cAAc;QACd,kBAAkB;IACtB;;IAEA;QACI,aAAa;QACb,iBAAiB;IACrB;;IAEA;QACI,aAAa;QACb,gBAAgB;IACpB;;IAEA;QACI,mBAAmB;QACnB,SAAS;QACT,WAAW;QACX,SAAS;IACb;;IAEA;QACI,2BAA2B;IAC/B;;IAEA;QACI,iBAAiB;IACrB;;IAEA;QACI,eAAe;IACnB;AACJ","sourcesContent":["/* * {\n  border: 1px solid red;\n} */\n\nhtml {\n    box-sizing: border-box;\n}\n*, *:before, *:after {\n    box-sizing: inherit;\n}\n\nbody {\n    font-family: 'Roboto', sans-serif;\n    color: #5a5a56;\n    background-color: #f5eadb;\n    height: 100vh;\n    display: grid;\n    grid-template-rows: auto 1fr auto;\n    grid-template-areas:\n        \"header\"\n        \"main\"\n        \"footer\";\n    margin: 0;\n}\n\na {\n    color: inherit;\n    text-decoration: none;\n}\n\na:hover {\n    color: #eab06b;\n}\n\nheader,\nfooter {\n    color: #ccb474;\n    background-color: #403f3c;\n}\n\nheader {\n    grid-area: header;\n    display: flex;\n    justify-content: space-around;\n    position: sticky;\n}\n\n.logo {\n    margin: 1rem 0;\n    display: flex;\n    gap: 1ch;\n    font-size: 0.75rem;\n}\n\na.logo {\n    color: inherit;\n}\n\nh1 {\n    margin: 0;\n}\n\n/* Hide default checkbox */\ninput[type=checkbox] {\n    display: none;\n    user-select: none;\n}\n\n/* When hamburger (checkbox) is clicked, display menu */\ninput[type=checkbox]:checked ~ nav.menu {\n    display: block;\n}\n\n.hamburger {\n    display: flex;\n    align-items: center;\n    font-size: 1.5rem;\n}\n\n/* Hide menu by default */\nnav.menu {\n    display: none;\n    background-color: #403f3c;\n    position: absolute;\n    top: 3.78rem;\n}\n\nul.menu {\n    list-style: none;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    gap: 1rem;\n    width: 100vw;\n    font-size: 1.25rem;\n    font-weight: 600;\n    margin-top: 0.5rem;\n    padding: 0;\n}\n\n.main {\n    grid-area: main;\n    display: flex;\n}\n\n.bg-img {\n    flex: 1;\n    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');\n    background-position: center;\n    background-size: cover;\n    background-repeat: no-repeat;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text {\n    color: white;\n    width: 70%;\n    font-size: 1.2rem;\n    font-weight: 500;\n    text-align: center;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    justify-content: center;\n}\n\n.bg-text > h1 {\n    font-size: 3.5rem;\n}\n\nfooter {\n    grid-area: footer;\n}\n\n@media only screen and (min-width: 700px) {\n    .logo {\n        display: block;\n        font-size: inherit;\n    }\n\n    .hamburger {\n        display: none;\n        user-select: none;\n    }\n\n    nav.menu {\n        display: flex;\n        position: static;\n    }\n\n    ul.menu {\n        flex-direction: row;\n        gap: 3rem;\n        width: auto;\n        margin: 0;\n    }\n\n    .bg-img {\n        background-position: 0% 75%;\n    }\n\n    .bg-text {\n        font-size: 1.5rem;\n    }\n\n    .bg-text > h1 {\n        font-size: 4rem;\n    }\n}\n"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -573,38 +573,6 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
-/***/ "./src/createEl.js":
-/*!*************************!*\
-  !*** ./src/createEl.js ***!
-  \*************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ element)
-/* harmony export */ });
-function element(tag, className, id, inputType) {
-    const el = document.createElement(`${tag}`);
-
-    if (typeof className !== 'undefined') {
-        el.classList.add(`${className}`);
-    }
-
-    if (typeof id !== 'undefined') {
-        el.id = id;
-    }
-
-    if (typeof inputType !== 'undefined') {
-        el.type = `${inputType}`;
-    }
-
-    return el;
-}
-
-// document.body.appendChild(element('header'));
-
-/***/ }),
-
 /***/ "./src/bg.jpg":
 /*!********************!*\
   !*** ./src/bg.jpg ***!
@@ -757,25 +725,76 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
-/* harmony import */ var _createEl_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./createEl.js */ "./src/createEl.js");
 
- // param: tag, className, id, inputType
 
-document.body.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('header'));
-const header = document.querySelector('header');
+const header = document.createElement('header');
+document.body.appendChild(header);
 
-header.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('a', 'logo', 'logo'));
-const logo = document.querySelector('.logo');
+function createLogo(firstLine, secondLine) {
+    const logo = document.createElement('a');
+    logo.classList.add('logo');
+    logo.href = '#';
+    header.appendChild(logo);
 
-logo.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('h1'));
-const logoLine1 = document.querySelector('.logo > h1:first-child')
-logoLine1.textContent = 'THE HAPPY';
+    const logoLine1 = document.createElement('h1');
+    logoLine1.textContent = `${firstLine}`;
+    logo.appendChild(logoLine1);
 
-logo.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('h1'));
-const logoLine2 = document.querySelector('.logo > h1:nth-child(2)')
-logoLine2.textContent = 'LITTLE PIGLET';
+    if (typeof secondLine !== 'undefined') {
+        const logoLine2 = document.createElement('h1');
+        logoLine2.textContent = `${secondLine}`;
+        logo.appendChild(logoLine2);
+    }
 
-header.appendChild((0,_createEl_js__WEBPACK_IMPORTED_MODULE_1__["default"])('input', 'checkbox_toggle', 'checkbox_toggle', 'checkbox'));
+    return logo;
+};
+
+createLogo('THE HAPPY', 'LITTLE PIGLET');
+
+function menu() {
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.id = 'checkbox_toggle';
+    checkbox.classList.add('checkbox_toggle')
+    header.appendChild(checkbox);
+
+    const checkboxLabel = document.createElement('label');
+    checkboxLabel.htmlFor = 'checkbox_toggle';
+    checkboxLabel.classList.add('hamburger');
+    checkboxLabel.textContent = '☰';
+    header.appendChild(checkboxLabel);
+
+    const menuNav = document.createElement('nav');
+    menuNav.classList.add('menu');
+    header.appendChild(menuNav);
+
+    const menuUl = document.createElement('ul');
+    menuUl.classList.add('menu');
+    menuNav.appendChild(menuUl);
+
+    const homeLi = document.createElement('li');
+    menuUl.appendChild(homeLi);
+    const homeA = document.createElement('a');
+    homeA.textContent = 'Home';
+    homeA.href = '#';
+    homeLi.appendChild(homeA);
+
+    const menuLi = document.createElement('li');
+    menuUl.appendChild(menuLi);
+    const menuA = document.createElement('a');
+    menuA.textContent = 'Menu';
+    menuA.href = '#';
+    menuLi.appendChild(menuA);
+
+    const contactLi = document.createElement('li');
+    menuUl.appendChild(contactLi);
+    const contactA = document.createElement('a');
+    contactA.textContent = 'Contact';
+    contactA.href = '#';
+    contactLi.appendChild(contactA);
+
+    return menu;
+};
 
 })();
 
