@@ -646,6 +646,44 @@ function createMenu(...items) {
 
 /***/ }),
 
+/***/ "./src/main.js":
+/*!*********************!*\
+  !*** ./src/main.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function createMain() {
+    const main = document.createElement('div');
+    main.classList.add('main');
+    document.body.appendChild(main);
+
+    const backgroundImg = document.createElement('div');
+    backgroundImg.classList.add('bg-img');
+    main.appendChild(backgroundImg);
+
+    const backgroundTxt = document.createElement('div');
+    backgroundTxt.classList.add('bg-text');
+    backgroundImg.appendChild(backgroundTxt);
+
+    const title = document.createElement('h1');
+    title.textContent = 'THE SMOKO ROOM'
+    backgroundTxt.appendChild(title);
+
+    const description = document.createElement('p');
+    description.textContent = 'Having moved from the original site in Toronto, the Happy Little Piglet has been turning out meats from premises just out of Canberra since February 2022. The end of October 2022 we opened the doors to visitors and locals to experience the kind of hospitality The Happy Little Piglet is about - straight forward and generous.'
+    backgroundTxt.appendChild(description);
+
+    return main;
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createMain);
+
+/***/ }),
+
 /***/ "./src/bg.jpg":
 /*!********************!*\
   !*** ./src/bg.jpg ***!
@@ -799,10 +837,13 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ "./src/header.js");
+/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main */ "./src/main.js");
+
 
 
 
 (0,_header__WEBPACK_IMPORTED_MODULE_1__["default"])();
+(0,_main__WEBPACK_IMPORTED_MODULE_2__["default"])();
 })();
 
 /******/ })()
