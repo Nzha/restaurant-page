@@ -45,14 +45,14 @@ header {
     position: sticky;
 }
 
-.logo {
+.title {
     margin: 1rem 0;
     display: flex;
     gap: 1ch;
     font-size: 0.75rem;
 }
 
-a.logo {
+a.title {
     color: inherit;
 }
 
@@ -77,12 +77,19 @@ input[type=checkbox]:checked ~ nav.menu {
     font-size: 1.5rem;
 }
 
+div.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Hide menu by default for small screens */
 nav.menu {
     display: none;
     background-color: #403f3c;
     position: absolute;
     top: 3.78rem;
+    right: 0rem;
 }
 
 ul.menu {
@@ -135,7 +142,7 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
-    .logo {
+    .title {
         display: block;
         font-size: inherit;
     }
