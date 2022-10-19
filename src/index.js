@@ -3,22 +3,20 @@ import './style.css';
 const header = document.createElement('header');
 document.body.appendChild(header);
 
-function createLogo(...lines) {
-    const logo = document.createElement('a');
-    logo.classList.add('logo');
-    logo.href = '#';
-    header.appendChild(logo);
+function createTitle(...lines) {
+    const title = document.createElement('a');
+    title.classList.add('logo');
+    title.href = '#';
+    header.appendChild(title);
 
     for (const line of lines) {
-        const logoLine = document.createElement('h1');
-        logoLine.textContent = `${line}`;
-        logo.appendChild(logoLine);
+        const titleLine = document.createElement('h1');
+        titleLine.textContent = `${line}`;
+        title.appendChild(titleLine);
     }
-
-    return logo;
 }
 
-createLogo('THE HAPPY', 'LITTLE PIGLET');
+createTitle('THE HAPPY', 'LITTLE PIGLET');
 
 function createMenu(...items) {
     // Add checkbox then replace it by ☰ on small screens to create responsive menu
