@@ -1,3 +1,5 @@
+import loadHome from "./home";
+
 function createHeader() {
     const header = document.createElement('header');
     document.body.appendChild(header);
@@ -52,9 +54,20 @@ function createMenu(...items) {
         itemA.textContent = `${item}`;
         itemA.href = '#';
         itemLi.appendChild(itemA);
+        itemA.addEventListener('click', createLinks);
     }
 
     return menu;
+}
+
+function createLinks(e) {
+    if (e.target.textContent === 'Home') {
+        loadHome();
+    } else if (e.target.textContent === 'Menu') {
+        loadMenu();
+    } else if (e.target.textContent === 'Contact') {
+        loadContact();
+    }
 }
 
 export default createHeader;

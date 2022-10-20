@@ -1,4 +1,4 @@
-function createMain() {
+function loadHome() {
     const main = document.createElement('div');
     main.classList.add('main');
     document.body.appendChild(main);
@@ -22,4 +22,4 @@ function createMain() {
     return main;
 }
 
-export default createMain;
+export default loadHome;

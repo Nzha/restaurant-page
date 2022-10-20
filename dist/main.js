@@ -583,6 +583,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./src/home.js");
+
+
 function createHeader() {
     const header = document.createElement('header');
     document.body.appendChild(header);
@@ -637,18 +640,29 @@ function createMenu(...items) {
         itemA.textContent = `${item}`;
         itemA.href = '#';
         itemLi.appendChild(itemA);
+        itemA.addEventListener('click', createLinks);
     }
 
     return menu;
+}
+
+function createLinks(e) {
+    if (e.target.textContent === 'Home') {
+        (0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])();
+    } else if (e.target.textContent === 'Menu') {
+        loadMenu();
+    } else if (e.target.textContent === 'Contact') {
+        loadContact();
+    }
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);
 
 /***/ }),
 
-/***/ "./src/main.js":
+/***/ "./src/home.js":
 /*!*********************!*\
-  !*** ./src/main.js ***!
+  !*** ./src/home.js ***!
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
@@ -656,7 +670,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function createMain() {
+function loadHome() {
     const main = document.createElement('div');
     main.classList.add('main');
     document.body.appendChild(main);
@@ -680,7 +694,7 @@ function createMain() {
     return main;
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createMain);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHome);
 
 /***/ }),
 
@@ -837,13 +851,13 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 /* harmony import */ var _header__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./header */ "./src/header.js");
-/* harmony import */ var _main__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./main */ "./src/main.js");
+/* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./home */ "./src/home.js");
 
 
 
 
 (0,_header__WEBPACK_IMPORTED_MODULE_1__["default"])();
-(0,_main__WEBPACK_IMPORTED_MODULE_2__["default"])();
+(0,_home__WEBPACK_IMPORTED_MODULE_2__["default"])();
 })();
 
 /******/ })()
