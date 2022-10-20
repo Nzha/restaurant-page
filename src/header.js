@@ -54,13 +54,13 @@ function createMenu(...items) {
         itemA.textContent = `${item}`;
         itemA.href = '#';
         itemLi.appendChild(itemA);
-        itemA.addEventListener('click', createLinks);
+        itemA.addEventListener('click', createMenuLinks);
     }
 
     return menu;
 }
 
-function createLinks(e) {
+function createMenuLinks(e) {
     if (e.target.textContent === 'Home') {
         loadHome();
     } else if (e.target.textContent === 'Menu') {

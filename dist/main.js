@@ -640,13 +640,13 @@ function createMenu(...items) {
         itemA.textContent = `${item}`;
         itemA.href = '#';
         itemLi.appendChild(itemA);
-        itemA.addEventListener('click', createLinks);
+        itemA.addEventListener('click', createMenuLinks);
     }
 
     return menu;
 }
 
-function createLinks(e) {
+function createMenuLinks(e) {
     if (e.target.textContent === 'Home') {
         (0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])();
     } else if (e.target.textContent === 'Menu') {
