@@ -584,6 +584,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./src/home.js");
+/* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+
 
 
 function createHeader() {
@@ -650,7 +652,7 @@ function createMenuLinks(e) {
     if (e.target.textContent === 'Home') {
         (0,_home__WEBPACK_IMPORTED_MODULE_0__["default"])();
     } else if (e.target.textContent === 'Menu') {
-        loadMenu();
+        (0,_menu__WEBPACK_IMPORTED_MODULE_1__["default"])();
     } else if (e.target.textContent === 'Contact') {
         loadContact();
     }
@@ -695,6 +697,24 @@ function loadHome() {
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHome);
+
+/***/ }),
+
+/***/ "./src/menu.js":
+/*!*********************!*\
+  !*** ./src/menu.js ***!
+  \*********************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function loadMenu() {
+    console.log('works');
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);
 
 /***/ }),
 
