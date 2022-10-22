@@ -1,6 +1,12 @@
 function loadHome() {
+
+    // Return if 'home' div already exists
+    const test = document.querySelector('body > div:first-of-type');
+    if (test && test.classList.contains('home')) return;
+
+    // If div doesn't exit yet, create it
     const main = document.createElement('div');
-    main.classList.add('main');
+    main.classList.add('main', 'home');
     document.body.appendChild(main);
 
     const backgroundImg = document.createElement('div');
