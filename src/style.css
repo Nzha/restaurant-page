@@ -157,7 +157,8 @@ ul.menu {
     padding: 0 3rem;
 }
 
-.menu-content h2 {
+.menu-content h2,
+.menu-content h3 {
     margin: 0;
 }
 
