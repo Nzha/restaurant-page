@@ -126,6 +126,11 @@ function loadMenu() {
     rightColumn.classList.add('right-column');
     menu.appendChild(rightColumn);
 
+    // if (window.screen.width < 700) {
+    //     console.log('works');
+    //     rightColumn.appendChild(document.createElement('hr'));
+    // }
+    rightColumn.appendChild(document.createElement('hr'));
     rightColumn.appendChild(
         createMenuItem(
             'SIGNATURE SANDWICHES',
