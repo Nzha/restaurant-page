@@ -675,8 +675,8 @@ __webpack_require__.r(__webpack_exports__);
 function loadHome() {
 
     // Return if 'home' div already exists
-    const test = document.querySelector('body > div:first-of-type');
-    if (test && test.classList.contains('home')) return;
+    const mainDiv = document.querySelector('body > div:first-of-type');
+    if (mainDiv && mainDiv.classList.contains('home')) return;
 
     // If div doesn't exit yet, create it
     const main = document.createElement('div');
@@ -717,7 +717,12 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 function loadMenu() {
-    console.log('works');
+    // Remove main content
+    const main = document.querySelector('body > .main');
+    main.parentNode.removeChild(main);
+
+    // Create menu
+    
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);
