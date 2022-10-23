@@ -573,6 +573,25 @@ module.exports = styleTagTransform;
 
 /***/ }),
 
+/***/ "./src/clearMain.js":
+/*!**************************!*\
+  !*** ./src/clearMain.js ***!
+  \**************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function clearMain(page) {
+    const mainDiv = document.querySelector('body > .main');
+    if (mainDiv) mainDiv.parentNode.removeChild(mainDiv);
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (clearMain);
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -672,13 +691,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function loadHome() {
+/* harmony import */ var _clearMain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clearMain */ "./src/clearMain.js");
 
+
+function loadHome() {
     // Return if 'home' div already exists
     const mainDiv = document.querySelector('body > div:first-of-type');
     if (mainDiv && mainDiv.classList.contains('home')) return;
 
-    // If div doesn't exit yet, create it
+    // If div doesn't exit yet, clear previous content if any and create 'home' content
+    (0,_clearMain__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
     const main = document.createElement('div');
     main.classList.add('main', 'home');
     document.body.appendChild(main);
@@ -716,13 +739,24 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-function loadMenu() {
-    // Remove main content
-    const main = document.querySelector('body > .main');
-    main.parentNode.removeChild(main);
+/* harmony import */ var _clearMain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clearMain */ "./src/clearMain.js");
 
-    // Create menu
-    
+
+function loadMenu() {
+    // Return if 'menu' div already exists
+    const mainDiv = document.querySelector('body > div:first-of-type');
+    if (mainDiv && mainDiv.classList.contains('menu')) return;
+
+    // If div doesn't exit yet, clear previous content if any and create 'menu' content
+    (0,_clearMain__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+    const main = document.createElement('div');
+    main.classList.add('main', 'menu');
+    document.body.appendChild(main);
+
+    const title = document.createElement('h1');
+    title.textContent = 'MENU';
+    main.appendChild(title);
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadMenu);

@@ -1,10 +1,13 @@
-function loadHome() {
+import clearMain from "./clearMain";
 
+function loadHome() {
     // Return if 'home' div already exists
     const mainDiv = document.querySelector('body > div:first-of-type');
     if (mainDiv && mainDiv.classList.contains('home')) return;
 
-    // If div doesn't exit yet, create it
+    // If div doesn't exit yet, clear previous content if any and create 'home' content
+    clearMain();
+
     const main = document.createElement('div');
     main.classList.add('main', 'home');
     document.body.appendChild(main);
