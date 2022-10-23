@@ -77,7 +77,7 @@ input[type=checkbox]:checked ~ nav.menu {
     font-size: 1.5rem;
 }
 
-div.menu {
+header > div.menu {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -135,6 +135,17 @@ ul.menu {
 
 .bg-text > h1 {
     font-size: 3.5rem;
+}
+
+.main.menu {
+    display: flex;
+    justify-content: center;
+}
+
+.menu-header {
+    width: 70%;
+    margin-top: 2rem;
+    text-align: center;
 }
 
 footer {
