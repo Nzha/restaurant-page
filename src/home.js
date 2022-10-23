@@ -1,8 +1,8 @@
 function loadHome() {
 
     // Return if 'home' div already exists
-    const test = document.querySelector('body > div:first-of-type');
-    if (test && test.classList.contains('home')) return;
+    const mainDiv = document.querySelector('body > div:first-of-type');
+    if (mainDiv && mainDiv.classList.contains('home')) return;
 
     // If div doesn't exit yet, create it
     const main = document.createElement('div');
