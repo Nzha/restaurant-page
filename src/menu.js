@@ -33,14 +33,34 @@ function loadMenu() {
     leftColumn.classList.add('left-column');
     menu.appendChild(leftColumn);
 
-    // const menuCategory = document.createElement('div');
-    // menuCategory.classList.add('menu-category');
-    // leftColumn.appendChild(menuCategory);
-
     leftColumn.appendChild(
         createMenuItem(
-            'BRISKET',
-            'chopped or sliced'
+            'TWO STEP',
+            'pick any 2 meats & 2 small sides'
+        )
+    )
+    leftColumn.appendChild(
+        createMenuItem(
+            'RIB & CHICKEN',
+            '1/2 lb. of ribs, 1/4 chicken & 2 small sides'
+        )
+    )
+    leftColumn.appendChild(
+        createMenuItem(
+            'SAMPLER PLATTER',
+            'pick any 3 meats & 2 small sides'
+        )
+    )
+    leftColumn.appendChild(
+        createMenuItem(
+            'PITMASTER SPECIAL FOR 2',
+            'pick any 4 meats & 3 small sides'
+        )
+    )
+    leftColumn.appendChild(
+        createMenuItem(
+            'FEED THE FAM',
+            '1/2 lb. brisket, 1/2 lb. chopped pork, 1/2 lb. chicken, 1 lb. pork rib tips & 4 large sides'
         )
     )
 
@@ -53,6 +73,30 @@ function loadMenu() {
         createMenuItem(
             'CAROLINA ON MY MIND',
             'chopped pork shoulder, crispy skin, spicy vinegar sauce, coleslaw, sesame bun'
+        )
+    )
+    rightColumn.appendChild(
+        createMenuItem(
+            'MUSIC CITY',
+            'spicy fried chicken breast, greens, pickles, buttermilk ranch, sesame bun'
+        )
+    )
+    rightColumn.appendChild(
+        createMenuItem(
+            'BIG CHEESE',
+            'chopped pork or brisket, melted cheese, crispy onions, BBQ sauce, sesame bun'
+        )
+    )
+    rightColumn.appendChild(
+        createMenuItem(
+            'CLUB',
+            'smoked turkey, crispy pork belly, avocado, tomato, garlic aioli, texas toast'
+        )
+    )
+    rightColumn.appendChild(
+        createMenuItem(
+            'JIVE TURKEY',
+            'smoked turkey, melted cheese, grilled tomato, crispy onions, ranch, BBQ sauce, texas toast'
         )
     )
 
