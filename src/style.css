@@ -21,6 +21,9 @@ body {
         "main"
         "footer";
     margin: 0;
+
+    /* Add top padding for fixed header */
+    padding-top: 2rem;
 }
 
 a {
@@ -42,7 +45,9 @@ header {
     grid-area: header;
     display: flex;
     justify-content: space-around;
-    position: sticky;
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .title {
@@ -179,9 +184,18 @@ footer {
 }
 
 @media only screen and (min-width: 700px) {
+    body {
+        /* Add top padding for fixed header */
+        padding-top: 6rem;
+    }
+
     .title {
         display: block;
         font-size: inherit;
+    }
+
+    .title.collapse {
+        display: flex;
     }
 
     .hamburger {

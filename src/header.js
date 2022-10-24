@@ -1,6 +1,8 @@
 import loadHome from "./home";
 import loadMenu from "./menu";
 
+document.addEventListener('scroll', shrinkHeaderOnScroll)
+
 function createHeader() {
     const header = document.createElement('header');
     document.body.appendChild(header);
@@ -68,6 +70,16 @@ function createMenuLinks(e) {
         loadMenu();
     } else if (e.target.textContent === 'Contact') {
         loadContact();
+    }
+}
+
+function shrinkHeaderOnScroll() {
+    const title = document.querySelector('.title');
+
+    if (window.scrollY >= 50) {
+        title.classList.add('collapse');
+    } else {
+        title.classList.remove('collapse');
     }
 }
 
