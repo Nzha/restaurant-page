@@ -592,6 +592,33 @@ function clearMain(page) {
 
 /***/ }),
 
+/***/ "./src/contact.js":
+/*!************************!*\
+  !*** ./src/contact.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _clearMain__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./clearMain */ "./src/clearMain.js");
+
+
+function loadContact() {
+    // Return if 'menu' div already exists
+    const mainDiv = document.querySelector('body > div:first-of-type');
+    if (mainDiv && mainDiv.classList.contains('contact')) return;
+
+    // If div doesn't exit yet, clear previous content if any and create 'menu' content
+    (0,_clearMain__WEBPACK_IMPORTED_MODULE_0__["default"])();
+
+}
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);
+
+/***/ }),
+
 /***/ "./src/header.js":
 /*!***********************!*\
   !*** ./src/header.js ***!
@@ -604,19 +631,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./home */ "./src/home.js");
 /* harmony import */ var _menu__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./menu */ "./src/menu.js");
+/* harmony import */ var _contact__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ././contact */ "./src/contact.js");
 
 
+
+
+document.addEventListener('scroll', shrinkHeaderOnScroll)
 
 function createHeader() {
     const header = document.createElement('header');
     document.body.appendChild(header);
-
-
-
-    // const headerContainer = document.createElement('div');
-    // headerContainer.classList.add('header-container')
-    // header.appendChild(headerContainer);
-
 
     header.appendChild(createTitle('THE HAPPY', 'LITTLE PIGLET'));
     header.appendChild(createMenu('Home', 'Menu', 'Contact'));
@@ -680,29 +704,19 @@ function createMenuLinks(e) {
     } else if (e.target.textContent === 'Menu') {
         (0,_menu__WEBPACK_IMPORTED_MODULE_1__["default"])();
     } else if (e.target.textContent === 'Contact') {
-        loadContact();
+        (0,_contact__WEBPACK_IMPORTED_MODULE_2__["default"])();
     }
 }
-
-document.addEventListener('scroll', shrinkHeaderOnScroll)
 
 function shrinkHeaderOnScroll() {
     const title = document.querySelector('.title');
-    const header = document.querySelector('header');
-
-    console.log(window.scrollY);
 
     if (window.scrollY >= 50) {
-        header.position = 'fixed';
         title.classList.add('collapse');
     } else {
-        header.position = 'static';
         title.classList.remove('collapse');
     }
-
-
 }
-
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);
 
