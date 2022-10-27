@@ -73,7 +73,7 @@ input[type=checkbox] {
 
 /* When hamburger (checkbox) is clicked, display menu */
 input[type=checkbox]:checked ~ nav.menu {
-    display: block;
+    display: block !important;
 }
 
 .hamburger {

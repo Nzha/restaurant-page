@@ -10,6 +10,10 @@ function createHeader() {
 
     header.appendChild(createTitle('THE HAPPY', 'LITTLE PIGLET'));
     header.appendChild(createMenu('Home', 'Menu', 'Contact'));
+
+    // Close menu on click on mobile
+    const menuItems = document.querySelectorAll('.menu-item');
+    menuItems.forEach(menuItem => menuItem.addEventListener('click', closeMenuOnClick))
 }
 
 function createTitle(...lines) {
@@ -53,6 +57,7 @@ function createMenu(...items) {
 
     for (const item of items) {
         const itemLi = document.createElement('li');
+        itemLi.classList.add('menu-item');
         menuUl.appendChild(itemLi);
         const itemA = document.createElement('a');
         itemA.textContent = `${item}`;
@@ -82,6 +87,15 @@ function shrinkHeaderOnScroll() {
     } else {
         title.classList.remove('collapse');
     }
+}
+
+// Close menu on mobile when user clicks on a link
+function closeMenuOnClick() {
+    const menuHamburger = document.querySelector('input[type=checkbox]');
+    const menuOnMobile = document.querySelector('input[type=checkbox]:checked ~ nav.menu');
+
+    menuOnMobile.style.display = 'none';
+    menuHamburger.checked = false;
 }
 
 export default createHeader;
