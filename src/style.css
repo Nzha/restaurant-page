@@ -204,7 +204,7 @@ footer {
     }
 
     nav.menu {
-        display: flex;
+        display: flex !important;
         position: static;
     }
 
