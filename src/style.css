@@ -73,11 +73,13 @@ input[type=checkbox] {
 
 input[type=checkbox] ~ nav.menu {
     opacity: 0;
-    transition: all .5s ease-out;
+    transform: translateY(-20%);
+    transition: all .3s ease-out;
 }
 
 /* When hamburger (checkbox) is clicked, display menu */
 input[type=checkbox]:checked ~ nav.menu {
+    transform: translateY(0);
     opacity: 1 !important;
 }
 
@@ -201,6 +203,10 @@ footer {
 
     .title.collapse {
         display: flex;
+    }
+
+    input[type=checkbox] ~ nav.menu {
+        transform: translateY(0);
     }
 
     .hamburger {
