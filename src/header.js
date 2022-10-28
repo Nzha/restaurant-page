@@ -95,7 +95,7 @@ function closeMenuOnClick() {
     const menuOnMobile = document.querySelector('input[type=checkbox]:checked ~ nav.menu');
 
     if (menuOnMobile) {
-        menuOnMobile.style.display = 'none';
+        menuOnMobile.style.opacity = '0';
         menuHamburger.checked = false;
     }
 }
