@@ -728,8 +728,10 @@ function closeMenuOnClick() {
     const menuHamburger = document.querySelector('input[type=checkbox]');
     const menuOnMobile = document.querySelector('input[type=checkbox]:checked ~ nav.menu');
 
-    menuOnMobile.style.display = 'none';
-    menuHamburger.checked = false;
+    if (menuOnMobile) {
+        menuOnMobile.style.display = 'none';
+        menuHamburger.checked = false;
+    }
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);
