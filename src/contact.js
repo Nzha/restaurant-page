@@ -47,13 +47,13 @@ function loadContact() {
     addressText.classList.add('address-text');
     address.appendChild(addressText);
 
-    const addressText1 = document.createElement('p');
-    addressText1.textContent = '1024 Oakwood Ave';
-    addressText.appendChild(addressText1);
+    const addressTextLine1 = document.createElement('p');
+    addressTextLine1.textContent = '1024 Oakwood Ave';
+    addressText.appendChild(addressTextLine1);
 
-    const addressText2 = document.createElement('p');
-    addressText2.textContent = 'San Diego, CA 22434';
-    addressText.appendChild(addressText2);
+    const addressTextLine2 = document.createElement('p');
+    addressTextLine2.textContent = 'San Diego, CA 22434';
+    addressText.appendChild(addressTextLine2);
 
     // Hours
     const hours = document.createElement('div');

@@ -203,13 +203,25 @@ ul.menu {
     align-items: center;
     background-color: #6a6d5a;
     width: 70%;
-    height: 400px;
     padding: 2rem;
     border-radius: 8px;
 }
 
+.contact-container p {
+    margin: 0;
+}
+
+.contact-left-side-container > div {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.address,
 .phone {
     display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 /* CONTACT PAGE ENDS */
