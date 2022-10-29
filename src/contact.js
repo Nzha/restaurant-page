@@ -114,17 +114,45 @@ function loadContact() {
     contactForm.classList.add('contact-form');
     contactFormContainer.appendChild(contactForm);
 
+    const fullNameLabel = document.createElement('label');
+    fullNameLabel.setAttribute('for', 'fullName');
+    fullNameLabel.textContent = 'Full Name';
+    contactForm.appendChild(fullNameLabel);
+
     const fullName = document.createElement('input');
     fullName.setAttribute('type', 'text');
+    fullName.setAttribute('id', 'fullName');
     fullName.setAttribute('name', 'fullName');
     fullName.setAttribute('placeholder', 'Full Name');
     contactForm.appendChild(fullName);
 
+    const emailLabel = document.createElement('label');
+    emailLabel.setAttribute('for', 'email');
+    emailLabel.textContent = 'Email';
+    contactForm.appendChild(emailLabel);
+
     const email = document.createElement('input');
     email.setAttribute('type', 'text');
+    email.setAttribute('id', 'email');
     email.setAttribute('name', 'email');
     email.setAttribute('placeholder', 'Email');
     contactForm.appendChild(email);
+
+    const messageLabel = document.createElement('label');
+    messageLabel.setAttribute('for', 'email');
+    messageLabel.textContent = 'Message';
+    contactForm.appendChild(messageLabel);
+
+    const textArea = document.createElement('textarea');
+    textArea.setAttribute('type', 'text');
+    textArea.setAttribute('id', 'message');
+    textArea.setAttribute('name', 'message');
+    textArea.setAttribute('placeholder', 'Type your message...');
+    contactForm.appendChild(textArea);
+
+    const button = document.createElement('button');
+    button.textContent = 'Send';
+    contactForm.appendChild(button);
 
     // RIGHT SIDE
     const rightSideContainer = document.createElement('div');
