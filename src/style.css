@@ -97,7 +97,6 @@ header > div.menu {
 
 /* Hide menu by default for small screens */
 nav.menu {
-    /* display: none; */
     background-color: #403f3c;
     position: absolute;
     top: 3.78rem;
@@ -125,7 +124,7 @@ ul.menu {
 /* HOME PAGE STARTS */
 .bg-img {
     flex: 1;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('bg.jpg');
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('./img/bg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -186,6 +185,35 @@ ul.menu {
 }
 /* MENU PAGE ENDS */
 
+/* CONTACT PAGE STARTS */
+.main.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-header {
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.contact-container {
+    color: #f5eadb;
+    display: flex;
+    align-items: center;
+    background-color: #6a6d5a;
+    width: 70%;
+    height: 400px;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+.phone {
+    display: flex;
+}
+
+/* CONTACT PAGE ENDS */
+
 footer {
     grid-area: footer;
 }
@@ -215,7 +243,6 @@ footer {
     }
 
     nav.menu {
-        /* display: flex !important; */
         opacity: 1 !important;
         position: static;
     }
