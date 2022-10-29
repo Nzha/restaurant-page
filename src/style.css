@@ -214,10 +214,11 @@ ul.menu {
 .contact-left-side-container > div {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.5rem;
 }
 
 .address,
+.hours,
 .phone {
     display: flex;
     align-items: center;

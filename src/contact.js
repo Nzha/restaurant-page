@@ -60,6 +60,22 @@ function loadContact() {
     hours.classList.add('hours');
     contactInfo.appendChild(hours);
 
+    const hoursIcon = document.createElement('div');
+    hoursIcon.classList.add('fa-solid', 'fa-clock');
+    hours.appendChild(hoursIcon);
+
+    const hoursText = document.createElement('div');
+    hoursText.classList.add('hours-text');
+    hours.appendChild(hoursText);
+
+    const hoursTextLine1 = document.createElement('p');
+    hoursTextLine1.textContent = 'Mon-Thurs: 8am-8pm';
+    hoursText.appendChild(hoursTextLine1);
+
+    const hoursTextLine2 = document.createElement('p');
+    hoursTextLine2.textContent = 'Fri-Sun: 8am-11pm';
+    hoursText.appendChild(hoursTextLine2);
+
     // Phone
     const phone = document.createElement('div');
     phone.classList.add('phone');
