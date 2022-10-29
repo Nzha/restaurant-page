@@ -87,16 +87,44 @@ function loadContact() {
 
     const phoneText = document.createElement('div');
     phoneText.classList.add('phone-text');
-    phoneText.textContent = '(222) 888 5555'
+    phoneText.textContent = '(222) 888 5555';
     phone.appendChild(phoneText);
 
-
-
-
     // LEFT SIDE - CONTACT FORM
-    const contactForm = document.createElement('div');
+    const contactFormContainer = document.createElement('div');
+    contactFormContainer.classList.add('contact-form-container');
+    leftSideContainer.appendChild(contactFormContainer);
+
+    // Title
+    const formTitle = document.createElement('div');
+    formTitle.classList.add('form-title');
+    contactFormContainer.appendChild(formTitle);
+
+    const formTitleIcon = document.createElement('i')
+    formTitleIcon.classList.add('fa-solid', 'fa-envelope')
+    formTitle.appendChild(formTitleIcon);
+
+    const formTitleText = document.createElement('div');
+    formTitleText.classList.add('form-title-text');
+    formTitleText.textContent = 'MESSAGE US';
+    formTitle.appendChild(formTitleText);
+
+    // Form
+    const contactForm = document.createElement('form');
     contactForm.classList.add('contact-form');
-    leftSideContainer.appendChild(contactForm);
+    contactFormContainer.appendChild(contactForm);
+
+    const fullName = document.createElement('input');
+    fullName.setAttribute('type', 'text');
+    fullName.setAttribute('name', 'fullName');
+    fullName.setAttribute('placeholder', 'Full Name');
+    contactForm.appendChild(fullName);
+
+    const email = document.createElement('input');
+    email.setAttribute('type', 'text');
+    email.setAttribute('name', 'email');
+    email.setAttribute('placeholder', 'Email');
+    contactForm.appendChild(email);
 
     // RIGHT SIDE
     const rightSideContainer = document.createElement('div');
