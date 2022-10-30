@@ -151,7 +151,7 @@ function loadContact() {
     contactForm.appendChild(textArea);
 
     const button = document.createElement('button');
-    button.textContent = 'Send';
+    button.textContent = 'SEND';
     contactForm.appendChild(button);
 
     // RIGHT SIDE
