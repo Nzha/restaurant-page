@@ -4,7 +4,7 @@ import loadContact from "././contact";
 
 document.addEventListener('scroll', shrinkHeaderOnScroll)
 
-function createHeader() {
+function loadHeader() {
     const header = document.createElement('header');
     document.body.appendChild(header);
 
@@ -100,4 +100,4 @@ function closeMenuOnClick() {
     }
 }
 
-export default createHeader;
+export default loadHeader;

@@ -1,6 +1,6 @@
 import './style.css';
-import createHeader from './header';
+import loadHeader from './header';
 import loadHome from './home';
 
-createHeader();
+loadHeader();
 loadHome();
