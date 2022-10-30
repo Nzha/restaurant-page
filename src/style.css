@@ -193,7 +193,7 @@ ul.menu {
 }
 
 .contact-header {
-    margin: 3rem 0;
+    margin: 3rem 0 1rem 0;
     text-align: center;
 }
 
@@ -348,14 +348,19 @@ footer {
         display: none;
     }
 
+    .contact-header {
+        margin-bottom: 2rem;
+    }
+
     .contact-container {
         display: grid;
         grid-template-columns: 400px 3fr;
         width: 80%;
-        padding: 3rem;
     }
 
     .contact-form > button {
+        display: flex;
+        align-self: flex-start;
         margin-bottom: 0;
     }
 
