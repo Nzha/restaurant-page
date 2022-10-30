@@ -199,12 +199,12 @@ ul.menu {
 
 .contact-container {
     color: #f5eadb;
-    display: flex;
     align-items: center;
     background-color: #6a6d5a;
-    width: 70%;
+    width: 85%;
     padding: 2rem;
     border-radius: 8px;
+    gap: 5rem;
 }
 
 .contact-container p {
@@ -256,7 +256,7 @@ label {
     border: 1px solid black;
 }
 
-textarea {
+.contact-form > textarea {
     font-family: "Helvetica", "Arial", sans-serif;
     min-height: 200px;
     resize: none;
@@ -270,12 +270,18 @@ textarea {
     border: none;
     border-radius: 5px;
     padding: 8px 16px;
+    margin-bottom: 2rem;
 }
 
 .contact-form > button:hover {
     cursor: pointer;
     background-color: #CDB575;
 }
+
+iframe {
+    width: 100%;
+}
+
 /* CONTACT PAGE ENDS */
 
 footer {
@@ -339,5 +345,10 @@ footer {
 
     .menu-content hr:nth-child(1) {
         display: none;
+    }
+
+    .contact-container {
+        display: flex;
+        width: 70%;
     }
 }
