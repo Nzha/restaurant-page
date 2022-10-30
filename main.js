@@ -629,7 +629,7 @@ function loadContact() {
     container.classList.add('contact-container');
     main.appendChild(container);
 
-    // LEFT SIDE
+    // Left side
     const leftSideContainer = document.createElement('div');
     leftSideContainer.classList.add('contact-left-side-container');
     container.appendChild(leftSideContainer);
@@ -637,7 +637,7 @@ function loadContact() {
     loadContactInfo(leftSideContainer);
     loadContactForm(leftSideContainer);
 
-    // RIGHT SIDE
+    // Right side
     const rightSideContainer = document.createElement('div');
     rightSideContainer.classList.add('contact-right-side-container');
     container.appendChild(rightSideContainer);
@@ -801,7 +801,7 @@ __webpack_require__.r(__webpack_exports__);
 
 document.addEventListener('scroll', shrinkHeaderOnScroll)
 
-function createHeader() {
+function loadHeader() {
     const header = document.createElement('header');
     document.body.appendChild(header);
 
@@ -897,7 +897,7 @@ function closeMenuOnClick() {
     }
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (createHeader);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadHeader);
 
 /***/ }),
 
