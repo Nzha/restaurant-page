@@ -634,10 +634,24 @@ function loadContact() {
     leftSideContainer.classList.add('contact-left-side-container');
     container.appendChild(leftSideContainer);
 
-    // LEFT SIDE - CONTACT INFO
+    loadContactInfo(leftSideContainer);
+    loadContactForm(leftSideContainer);
+
+    // RIGHT SIDE
+    const rightSideContainer = document.createElement('div');
+    rightSideContainer.classList.add('contact-right-side-container');
+    container.appendChild(rightSideContainer);
+
+    const map = document.createElement('iframe');
+    map.setAttribute("src", 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104181.6980894408!2d149.12978300000003!3d-35.31398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d69b05c9021%3A0x500ea6ea7695660!2sCanberra%20ACT%202601%2C%20Australia!5e0!3m2!1sen!2sus!4v1667129106504!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade');
+    rightSideContainer.appendChild(map);
+
+}
+
+function loadContactInfo(container) {
     const contactInfo = document.createElement('div');
     contactInfo.classList.add('contact-info');
-    leftSideContainer.appendChild(contactInfo);
+    container.appendChild(contactInfo);
 
     // Address
     const address = document.createElement('div');
@@ -694,11 +708,12 @@ function loadContact() {
     phoneText.classList.add('phone-text');
     phoneText.textContent = '(222) 888 5555';
     phone.appendChild(phoneText);
+}
 
-    // LEFT SIDE - CONTACT FORM
+function loadContactForm(container) {
     const contactFormContainer = document.createElement('div');
     contactFormContainer.classList.add('contact-form-container');
-    leftSideContainer.appendChild(contactFormContainer);
+    container.appendChild(contactFormContainer);
 
     // Title
     const formTitle = document.createElement('div');
@@ -761,16 +776,6 @@ function loadContact() {
     const button = document.createElement('button');
     button.textContent = 'SEND';
     contactForm.appendChild(button);
-
-    // RIGHT SIDE
-    const rightSideContainer = document.createElement('div');
-    rightSideContainer.classList.add('contact-right-side-container');
-    container.appendChild(rightSideContainer);
-
-    const map = document.createElement('iframe');
-    map.setAttribute("src", 'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d104181.6980894408!2d149.12978300000003!3d-35.31398!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b164d69b05c9021%3A0x500ea6ea7695660!2sCanberra%20ACT%202601%2C%20Australia!5e0!3m2!1sen!2sus!4v1667129106504!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade');
-    rightSideContainer.appendChild(map);
-
 }
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (loadContact);
