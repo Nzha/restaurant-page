@@ -199,7 +199,6 @@ ul.menu {
 
 .contact-container {
     color: #f5eadb;
-    align-items: center;
     background-color: #6a6d5a;
     width: 85%;
     padding: 2rem;
@@ -280,6 +279,7 @@ label {
 
 iframe {
     width: 100%;
+    border: none;
 }
 
 /* CONTACT PAGE ENDS */
@@ -343,12 +343,34 @@ footer {
         gap: 4rem;
     }
 
+    /* Remove hr element above 'Signature sandwiches' in menu page */
     .menu-content hr:nth-child(1) {
         display: none;
     }
 
     .contact-container {
+        display: grid;
+        grid-template-columns: 400px 3fr;
+        width: 80%;
+        padding: 3rem;
+    }
+
+    .contact-form > button {
+        margin-bottom: 0;
+    }
+
+    .contact-right-side-container {
         display: flex;
-        width: 70%;
+        align-items: center;
+    }
+
+    iframe {
+        height: 90%;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .contact-container {
+        width: 60%;
     }
 }
