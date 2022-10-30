@@ -124,6 +124,7 @@ function loadContact() {
     fullName.setAttribute('id', 'fullName');
     fullName.setAttribute('name', 'fullName');
     fullName.setAttribute('placeholder', 'Full Name');
+    fullName.required = true;
     contactForm.appendChild(fullName);
 
     const emailLabel = document.createElement('label');
@@ -136,6 +137,7 @@ function loadContact() {
     email.setAttribute('id', 'email');
     email.setAttribute('name', 'email');
     email.setAttribute('placeholder', 'Email');
+    email.required = true;
     contactForm.appendChild(email);
 
     const messageLabel = document.createElement('label');
@@ -148,6 +150,7 @@ function loadContact() {
     textArea.setAttribute('id', 'message');
     textArea.setAttribute('name', 'message');
     textArea.setAttribute('placeholder', 'Type your message...');
+    textArea.required = true;
     contactForm.appendChild(textArea);
 
     const button = document.createElement('button');
@@ -157,7 +160,9 @@ function loadContact() {
     // RIGHT SIDE
     const rightSideContainer = document.createElement('div');
     rightSideContainer.classList.add('contact-right-side-container');
+    rightSideContainer.id = 'map';
     container.appendChild(rightSideContainer);
+
 
 }
 

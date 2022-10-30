@@ -256,6 +256,12 @@ label {
     border: 1px solid black;
 }
 
+textarea {
+    font-family: "Helvetica", "Arial", sans-serif;
+    min-height: 200px;
+    resize: none;
+}
+
 .contact-form > button {
     margin-top: 0.5rem;
     color: white;
@@ -270,7 +276,6 @@ label {
     cursor: pointer;
     background-color: #CDB575;
 }
-
 /* CONTACT PAGE ENDS */
 
 footer {
