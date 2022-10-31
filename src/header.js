@@ -2,7 +2,7 @@ import loadHome from "./home";
 import loadMenu from "./menu";
 import loadContact from "./contact";
 
-document.addEventListener('scroll', shrinkHeaderOnScroll)
+document.addEventListener('scroll', shrinkHeaderDisplayFooterOnScroll)
 
 function loadHeader() {
     const header = document.createElement('header');
@@ -79,13 +79,16 @@ function createMenuLinks(e) {
     }
 }
 
-function shrinkHeaderOnScroll() {
+function shrinkHeaderDisplayFooterOnScroll() {
     const title = document.querySelector('.title');
+    const footer = document.querySelector('footer');
 
     if (window.scrollY >= 50) {
         title.classList.add('collapse');
+        footer.style.display = 'flex';
     } else {
         title.classList.remove('collapse');
+        footer.style.display = 'none';
     }
 }
 

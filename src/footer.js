@@ -3,7 +3,7 @@ function loadFooter() {
     document.body.appendChild(footer);
 
     const gitHubLink = document.createElement('a');
-    gitHubLink.href = 'https://github.com/Nzha/restaurant-page"';
+    gitHubLink.href = 'https://github.com/Nzha/restaurant-page';
     gitHubLink.target = '_blank';
     footer.appendChild(gitHubLink);
 

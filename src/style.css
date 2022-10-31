@@ -286,14 +286,16 @@ iframe {
 
 footer {
     grid-area: footer;
+    display: none;
+    margin-top: 1.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 footer a {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 6px;
-    padding: 3px 0;
+    padding: 0.4rem 0 0.25rem;
     text-decoration: none;
 }
 
